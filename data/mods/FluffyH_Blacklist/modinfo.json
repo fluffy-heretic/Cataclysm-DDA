@@ -1,0 +1,37 @@
+[
+  {
+    "type": "MOD_INFO",
+    "ident": "fluffyh-blacklist",
+    "name": "fluffy-heretic Blacklist",
+    "authors": [ "fluffy-heretic" ],
+    "description": "Removes certain items from the game.",
+    "category": "item_exclude",
+    "dependencies": [ "dda" ]
+  },
+  {
+    "type": "ITEM_BLACKLIST",
+    "items": [
+      "pheromone",
+      "adderall",
+      "roller_blades",
+      "rollerskates",
+      "lighter",
+      "ref_lighter",
+      "ref_lighter_on",
+      "matches",
+      "armor_nomad",
+      "helmet_nomad"
+    ]
+  },
+  {
+    "type": "TRAIT_BLACKLIST",
+    "traits": [
+      "MARTIAL_ARTS",
+      "MARTIAL_ARTS2",
+      "MARTIAL_ARTS3",
+      "MARTIAL_ARTS4",
+      "MARTIAL_ARTS5",
+      "GOURMAND"
+    ]
+  }
+]
