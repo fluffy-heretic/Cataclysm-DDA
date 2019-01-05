@@ -3618,7 +3618,7 @@ void overmap::place_mongroups()
             if( !one_in( 16 ) || elem.size > 5 ) {
                 mongroup m( mongroup_id( "GROUP_ZOMBIE" ), ( elem.pos.x * 2 ), ( elem.pos.y * 2 ), 0,
                             int( elem.size * 2.5 ),
-                            elem.size * 80 );
+                            int( elem.size * 80 * get_option<float>( "SPAWN_DENSITY" ) ) );
                 //                m.set_target( zg.back().posx, zg.back().posy );
                 m.horde = true;
                 m.wander( *this );
