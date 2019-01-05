@@ -91,17 +91,17 @@ void main_menu::print_menu( const catacurses::window &w_open, int iSel, const in
         mvwputch( w_open, window_height - 4, i, c_white, LINE_OXOX );
     }
 
-    center_print( w_open, window_height - 2, c_red,
-                  _( "Bugs?  Suggestions?  Use links in MOTD to report them." ) );
+    //center_print( w_open, window_height - 2, c_red,
+    //              _( "Bugs?  Suggestions?  Use links in MOTD to report them." ) );
 
-    center_print( w_open, window_height - 1, c_light_cyan, string_format( _( "Tip of the day: %s" ),
-                  vdaytip ) );
+    //center_print( w_open, window_height - 1, c_light_cyan, string_format( _( "Tip of the day: %s" ),
+    //              vdaytip ) );
 
     int iLine = 0;
     const int iOffsetX = ( window_width - FULL_SCREEN_WIDTH ) / 2;
 
     const nc_color cColor1 = c_light_cyan;
-    const nc_color cColor2 = c_light_blue;
+    const nc_color cColor2 = c_pink;
     const nc_color cColor3 = c_light_blue;
 
     if( halloween_theme ) {
@@ -133,7 +133,7 @@ void main_menu::print_menu( const catacurses::window &w_open, int iSel, const in
     }
 
     iLine++;
-    center_print( w_open, iLine++, cColor3, string_format( _( "Version: %s" ), getVersionString() ) );
+    center_print( w_open, iLine++, cColor3, string_format( _( "%s" ), getVersionString() ) );
 
     int menu_length = 0;
     for( size_t i = 0; i < vMenuItems.size(); ++i ) {
